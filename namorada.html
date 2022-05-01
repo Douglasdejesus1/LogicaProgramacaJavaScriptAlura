@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+    var ano=2030;
+    function puloDeLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostrar(frase1){
+
+        document.write(frase1);
+        puloDeLinha()
+    }
+    //x=document.write(x+"  olá!");
+
+     mostrar("Flávio tem " + (ano - 1977)+ " anos"," velho");
+    //document.write("Flávio tem " + (ano - 1977)+ " anos");
+    //puloDeLinha();
+     mostrar("Joaquim nasceu em " + (ano - 1996)+" anos");
+    //document.write("Joaquim nasceu em " + (ano - 1996)+" anos");
+    //puloDeLinha();
+     mostrar("Barney nasceu em " + (ano - 1976)+" anos");
+    //document.write("Barney nasceu em " + (ano - 1976)+" anos");
+    var idadeFlavio = 31;
+    var idadeJoaquim = 36;
+    var idadeBarney = 35;
+    //puloDeLinha();
+    var media =(idadeFlavio+idadeJoaquim+idadeFlavio)/3;
+
+     mostrar("A media é "+Math.round(media));
+    //document.write("a media é "+Math.round(media));
+</script>

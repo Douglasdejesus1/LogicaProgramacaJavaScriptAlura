@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "home";
+    var senhaCadastrada = "playboyzinho";
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+    var contador=1;
+
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+    } else {
+
+        alert("Login inválido. Tente novamente");
+    }
+    
+    while(loginCadastrado != loginInformado || senhaCadastrada != senhaInformada && contador<3){
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+        contador+=1;
+
+
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        } else {
+            if (contador<3) {
+            alert("Login inválido. Tente novamente");
+            }else{
+                alert("Login inválido.");
+                alert("Usuario bloqueado!");
+            }
+        }
+    }
+</script>

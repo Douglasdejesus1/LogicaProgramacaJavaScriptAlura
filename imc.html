@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<script>
+
+ function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function imc(peso,altura){
+   var imc = peso/(altura*altura);
+   return imc;
+   
+}
+
+var pesoDouglas = 86;
+var alturaDouglas = 1.80;
+var imcDouglas = imc(pesoDouglas,alturaDouglas);
+mostra("O imc do Douglas é: "+imcDouglas);
+
+var pesoFlavia = 60;
+var alturaFlavia = 1.60;
+var imcFlavia = imc(pesoFlavia,alturaFlavia);
+mostra("O imc da Flavia é: "+imcFlavia);
+
+var totalImc = imc(pesoDouglas,alturaDouglas)+imc(pesoFlavia,alturaFlavia);
+mostra("A media é: "+(totalImc/2));
+
+var nome=prompt("Informe seu nome: ")
+var peso =prompt(nome+", Informe seu peso: ");
+var altura = prompt(nome+", Informe sua altura: ");
+var imcGenerico = imc(peso,altura);
+if (imcGenerico<25){
+   var qualidadeImc = "saudavel.";
+}
+if(imcGenerico>=25 && imcGenerico>30){
+   qualidadeImc = "com sobrepeso.";  
+}
+if(imcGenerico>=30){
+   qualidadeImc = "obeso." ; 
+}
+mostra("O imc de "+nome+" é: "+Math.round(imcGenerico)+" portanto vc está "+qualidadeImc);
+
+</script>

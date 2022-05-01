@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+ function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+var total = 0;
+var x=1;
+var denominador = parseInt(prompt("A tabuada de qual número quer exibir?"));
+while (x<=10){
+    total =x*denominador;
+    mostra("| "+denominador+" X "+x+" = "+total+" |");
+    x+=1;
+}
+
+
+
+
+</script>

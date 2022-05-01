@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+ function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function sorteio(n){
+var numeroPensado = Math.round(Math.random()*n);
+mostra(numeroPensado);
+}
+
+var n = parseInt(prompt("Escolha entre quantos numeros será sorteado um numero!"));
+sorteio(n);
+
+</script>
